@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "env",
+    "react"
+  ],
+  "plugins": [
+    "external-helpers",
+    "add-module-exports",
+    "syntax-export-extensions",
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    "transform-runtime",
+    "transform-regenerator",
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ]
+}

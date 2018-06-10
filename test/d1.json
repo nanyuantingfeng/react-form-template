@@ -1,0 +1,3911 @@
+{
+  "items": [
+    {
+      "nameSpell": "doucment.write(\"a\")",
+      "id": "zAU5onNl1o9400:9aaa547f217f459d4b659e6efe776552f53e0512",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "doucment.write(\"a\")",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:09192715513383910",
+      "updateTime": 1493949891810,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "isXXX",
+          "type": "isX",
+          "optional": false,
+          "label": "B",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目1234",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:jes5olISkk0I00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:jes5olISkk0I00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "<html>",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:cAM5oGlRbw7c00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:cAM5oGlRbw7c00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "舊巖峕埜麗戲",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:ivU5p3CUZg0k00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:ivU5p3CUZg0k00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "3333",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "zAU5onNl1o9400",
+      "isActive": true,
+      "flowPlanConfigId": "Ids5omHyyg0000",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "laohanceshi",
+      "id": "nko5omHyyg1000:47df29b038bde793064cd3651ac65c7a96c742c3",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "老韩测试",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:09192715513383910",
+      "updateTime": 1493817002886,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": true,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "dataType": {
+            "type": "whitespace",
+            "height": 50,
+            "backgroundColor": "#f00"
+          }
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": true,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目DCBA",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:JcM5mMvs8k0400",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:JcM5mMvs8k0400",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "!@#$%&",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        }
+      ],
+      "originalId": "nko5omHyyg1000",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "kenny-001",
+      "id": "vvE5omHyyg1U00:e62d44914109be3492aabb2f5d7655868cd21a3e",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "kenny-001",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:05633811631056697",
+      "updateTime": 1493808564999,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目A",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:B105jNDakU0Y00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:B105jNDakU0Y00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "测试1919",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "vvE5omHyyg1U00",
+      "isActive": true,
+      "flowPlanConfigId": "Ids5omHyyg0000",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "kenny-002",
+      "id": "e-w5onNl1o0w00:e5cf3b17d9a091fc725ae5e0fd9cec8dd67a4a3c",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "kenny-002",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:0200121420906665",
+      "updateTime": 1493808102548,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:a2k5kunLbc0o00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:a2k5kunLbc0o00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "收拾收拾",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:nSA5lILOgM0Q00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:nSA5lILOgM0Q00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "呼啦啦",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "e-w5onNl1o0w00",
+      "isActive": true,
+      "flowPlanConfigId": "Ids5omHyyg0000",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "baoxiaogongsi",
+      "id": "uUc5moqjnM0Y00:9b60e50f32be2ed740aae8c4254dbe8e8e1b7351",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "报销公司",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:070819696637026",
+      "updateTime": 1493732375606,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:B105jNDakU0Y00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:B105jNDakU0Y00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "测试001",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:nSA5lILOgM0Q00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:nSA5lILOgM0Q00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "呼啦啦",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "uUc5moqjnM0Y00",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "DEMO",
+      "id": "rgQ5mR4AD4dg00:1c8024aae66beba4bf0368c3d4fe4e5853289eac",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "DEMO",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:05633811631056697",
+      "updateTime": 1493732375605,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:B105jNDakU0Y00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:B105jNDakU0Y00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "测试001",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "rgQ5mR4AD4dg00",
+      "isActive": true,
+      "flowPlanConfigId": "Ag45moqjnM2A00",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "lins1",
+      "id": "+ts5mR4AD40400:26634c6050d1d9a22df71883231ac197941d24db",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "lins1",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:35555662798139",
+      "updateTime": 1493732375601,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:a2k5kunLbc0o00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:a2k5kunLbc0o00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "收拾收拾",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:zCk5moqjnM0k00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:zCk5moqjnM0k00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "sw@档案",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:O4Y5moqjnM1Y00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:O4Y5moqjnM1Y00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "sw2",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:cdk5moqjnM2k00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:cdk5moqjnM2k00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "又一个漏网",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:JcM5mMvs8k0400",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:JcM5mMvs8k0400",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "!@#$%&",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "remark",
+          "dataType": {
+            "type": "text",
+            "maxLength": 140,
+            "placeHolder": "140字以内"
+          },
+          "optional": false,
+          "label": "备注",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "sense",
+          "dataType": {
+            "type": "text",
+            "maxLength": 140,
+            "placeHolder": "该信息将不会被打印"
+          },
+          "optional": false,
+          "label": "敏感字段",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "+ts5mR4AD40400",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "fc85jvEkhI1o00",
+      "active": true
+    },
+    {
+      "nameSpell": "lins2",
+      "id": "zRs5mR4AD40800:1dfb7785d2e1a2742fd64ca1cd89f74aa65cdd8c",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "lins2",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:35555662798139",
+      "updateTime": 1493732375607,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:B105jNDakU0Y00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:B105jNDakU0Y00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "测试001",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:nSA5lILOgM0Q00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:nSA5lILOgM0Q00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "呼啦啦",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:wGQ5lILOgM2w00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:wGQ5lILOgM2w00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "xxxx",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "zRs5mR4AD40800",
+      "isActive": true,
+      "flowPlanConfigId": "gV45jvEkhI0E00",
+      "printTemplateId": "y1s5jvEkhI1s00",
+      "active": true
+    },
+    {
+      "nameSpell": "lins3",
+      "id": "oPI5mR4AD40c00:1493a5ee0f29b2f8c1d6c80b27cc5885d7fd1f0e",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "lins3",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:35555662798139",
+      "updateTime": 1493732375604,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:a2k5kunLbc0o00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:a2k5kunLbc0o00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "收拾收拾",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:nSA5lILOgM0Q00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:nSA5lILOgM0Q00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "呼啦啦",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:wGQ5lILOgM2w00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:wGQ5lILOgM2w00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "xxxx",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "oPI5mR4AD40c00",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "fc85jvEkhI1o00",
+      "active": true
+    },
+    {
+      "nameSpell": "linss",
+      "id": "4Bk5mR4AD40000:0fdd2c6f0f6261517ac760f904b44b21c34f3c46",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "linss",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:35555662798139",
+      "updateTime": 1493732375602,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:a2k5kunLbc0o00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:a2k5kunLbc0o00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "收拾收拾",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:zCk5moqjnM0k00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:zCk5moqjnM0k00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "sw@档案",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "remark",
+          "dataType": {
+            "type": "text",
+            "maxLength": 140,
+            "placeHolder": "140字以内"
+          },
+          "optional": false,
+          "label": "备注",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "4Bk5mR4AD40000",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "34c5jvEkhI1k00",
+      "active": true
+    },
+    {
+      "nameSpell": "richangbaoxiaodan",
+      "id": "SGk5jvEkhI1I00:49993831e44e19420a387e39622bcaf8283e4a86",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "日常报销单",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:manager8843",
+      "updateTime": 1493732375605,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:o445mR4AD4cY00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:o445mR4AD4cY00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目地区66",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:DYE5mR4AD4fQ00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:DYE5mR4AD4fQ00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "P@$%品牌",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "payeeId",
+          "dataType": {
+            "type": "ref",
+            "name": "payee",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "收款信息",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "remark",
+          "dataType": {
+            "type": "text",
+            "maxLength": 140,
+            "placeHolder": "140字以内"
+          },
+          "optional": true,
+          "label": "备注",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "sense",
+          "dataType": {
+            "type": "text",
+            "maxLength": 140,
+            "placeHolder": "该信息将不会被打印"
+          },
+          "optional": true,
+          "label": "敏感字段",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "SGk5jvEkhI1I00",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "y1s5jvEkhI1s00",
+      "active": true
+    },
+    {
+      "nameSpell": "测试-自定义档案",
+      "id": "VaY5jNDakU1s00:db1c6a746fd746ad5c850eb1d9171c673f27f665",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "测试-自定义档案",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:070819696637026",
+      "updateTime": 1493732375606,
+      "fields": [
+        {
+          "name": "specificationId",
+          "dataType": {
+            "type": "ref",
+            "name": "specification",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "单据类型",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "title",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "ownerId",
+          "dataType": {
+            "type": "ref",
+            "name": "owner",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "提交人",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submitter"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "expenseDate",
+          "dataType": {
+            "type": "date",
+            "dateRange": false,
+            "withTime": false
+          },
+          "optional": false,
+          "label": "报销日期",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_date"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "departmentId",
+          "dataType": {
+            "type": "ref",
+            "name": "department",
+            "format": "tree"
+          },
+          "optional": false,
+          "label": "报销部门",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "submit_department"
+          },
+          "editable": false,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:CBA5jvEav40000:project",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:CBA5jvEav40000:project",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "项目",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "PROPERTY:B105jNDakU0Y00",
+          "dataType": {
+            "type": "ref",
+            "name": "PROPERTY:B105jNDakU0Y00",
+            "format": "list"
+          },
+          "optional": false,
+          "label": "测试001",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
+        {
+          "name": "total",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.01",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "报销金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "total"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "payments",
+          "dataType": {
+            "type": "number",
+            "max": "100000000.00",
+            "min": "0.00",
+            "scale": 2,
+            "placeHolder": ""
+          },
+          "optional": false,
+          "label": "支付金额",
+          "defaultValue": {
+            "type": "predefine",
+            "name": "payments"
+          },
+          "editable": false,
+          "visible": false
+        },
+        {
+          "name": "details",
+          "dataType": {
+            "type": "list",
+            "elemType": {
+              "type": "complex",
+              "fields": [
+                {
+                  "name": "amount",
+                  "dataType": {
+                    "type": "number",
+                    "max": "100000000.00",
+                    "min": "0.01",
+                    "scale": 2,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "金额",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "0.00"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeId",
+                  "dataType": {
+                    "type": "ref",
+                    "name": "feeType",
+                    "format": "list"
+                  },
+                  "optional": false,
+                  "label": "费用类型",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "feeTypeForm",
+                  "dataType": {
+                    "type": "dynamic"
+                  },
+                  "optional": false,
+                  "label": "费用类型表单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": false,
+                  "visible": false
+                },
+                {
+                  "name": "invoice",
+                  "dataType": {
+                    "type": "number",
+                    "max": "99",
+                    "min": "0",
+                    "scale": 0,
+                    "placeHolder": ""
+                  },
+                  "optional": false,
+                  "label": "发票",
+                  "defaultValue": {
+                    "type": "predefine",
+                    "name": "1"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "attachments",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "attachment"
+                    }
+                  },
+                  "optional": true,
+                  "label": "附件",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "reason",
+                  "dataType": {
+                    "type": "text",
+                    "maxLength": 140,
+                    "placeHolder": "添加描述"
+                  },
+                  "optional": true,
+                  "label": "描述",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                },
+                {
+                  "name": "orders",
+                  "dataType": {
+                    "type": "list",
+                    "elemType": {
+                      "type": "ref",
+                      "name": "order",
+                      "format": "list"
+                    }
+                  },
+                  "optional": true,
+                  "label": "第三方订单",
+                  "defaultValue": {
+                    "type": "none"
+                  },
+                  "editable": true,
+                  "visible": true
+                }
+              ]
+            }
+          },
+          "optional": false,
+          "label": "消费明细",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        }
+      ],
+      "originalId": "VaY5jNDakU1s00",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "3kM5jvEkhI1g00",
+      "active": true
+    },
+    {
+      "nameSpell": "chalvbaoxiaodan",
+      "id": "avQ5jvEkhI1E00:32ca5291cef232cdb47863a5a9b6432624cb2076",
+      "corporationId": "CBA5jvEav40000",
+      "description": null,
+      "name": "差旅报销单",
+      "type": "expense",
+      "editorId": "CBA5jvEav40000:09192715513383910",
+      "updateTime": 1493732375602,
+      "fields": [
+        [
+          {
+            "name": "specificationId",
+            "dataType": {
+              "type": "ref",
+              "name": "specification",
+              "format": "list"
+            },
+            "optional": false,
+            "label": "单据类型",
+            "defaultValue": {
+              "type": "none"
+            },
+            "editable": true,
+            "visible": true
+          },
+          {
+            "name": "title",
+            "dataType": {
+              "type": "text",
+              "maxLength": 14,
+              "placeHolder": "14字以内"
+            },
+            "optional": false,
+            "label": "标题",
+            "defaultValue": {
+              "type": "none"
+            },
+            "editable": true,
+            "visible": true
+          },
+          {
+            "name": "ownerId",
+            "dataType": {
+              "type": "ref",
+              "name": "owner",
+              "format": "list"
+            },
+            "optional": false,
+            "label": "提交人",
+            "defaultValue": {
+              "type": "predefine",
+              "name": "submitter"
+            },
+            "editable": false,
+            "visible": true
+          },
+          {
+            "name": "expenseDate",
+            "dataType": {
+              "type": "date",
+              "dateRange": false,
+              "withTime": false
+            },
+            "optional": false,
+            "label": "报销日期",
+            "defaultValue": {
+              "type": "predefine",
+              "name": "submit_date"
+            },
+            "editable": true,
+            "visible": true
+          },
+          {
+            "name": "departmentId",
+            "dataType": {
+              "type": "ref",
+              "name": "department",
+              "format": "tree"
+            },
+            "optional": false,
+            "label": "报销部门",
+            "defaultValue": {
+              "type": "predefine",
+              "name": "submit_department"
+            },
+            "editable": true,
+            "visible": true
+          }
+        ],
+        [
+          {
+            "name": "PROPERTY:zCk5moqjnM0k00",
+            "dataType": {
+              "type": "ref",
+              "name": "PROPERTY:zCk5moqjnM0k00",
+              "format": "list"
+            },
+            "optional": false,
+            "label": "sw@档案1",
+            "defaultValue": {
+              "type": "none"
+            },
+            "editable": true,
+            "visible": true
+          },
+          {
+            "name": "PROPERTY:O4Y5moqjnM1Y00",
+            "dataType": {
+              "type": "ref",
+              "name": "PROPERTY:O4Y5moqjnM1Y00",
+              "format": "list"
+            },
+            "optional": false,
+            "label": "sw2",
+            "defaultValue": {
+              "type": "none"
+            },
+            "editable": true,
+            "visible": true
+          },
+          {
+            "name": "remark",
+            "dataType": {
+              "type": "text",
+              "maxLength": 140,
+              "placeHolder": "140字以内"
+            },
+            "optional": true,
+            "label": "备注",
+            "defaultValue": {
+              "type": "none"
+            },
+            "editable": true,
+            "visible": true
+          },
+          {
+            "name": "total",
+            "dataType": {
+              "type": "number",
+              "max": "100000000.00",
+              "min": "0.01",
+              "scale": 2,
+              "placeHolder": ""
+            },
+            "optional": false,
+            "label": "报销金额",
+            "defaultValue": {
+              "type": "predefine",
+              "name": "total"
+            },
+            "editable": false,
+            "visible": false
+          },
+          {
+            "name": "payments",
+            "dataType": {
+              "type": "number",
+              "max": "100000000.00",
+              "min": "0.00",
+              "scale": 2,
+              "placeHolder": ""
+            },
+            "optional": false,
+            "label": "支付金额",
+            "defaultValue": {
+              "type": "predefine",
+              "name": "payments"
+            },
+            "editable": false,
+            "visible": false
+          },
+          {
+            "name": "details",
+            "dataType": {
+              "type": "list",
+              "elemType": {
+                "type": "complex",
+                "fields": [
+                  {
+                    "name": "amount",
+                    "dataType": {
+                      "type": "number",
+                      "max": "100000000.00",
+                      "min": "0.01",
+                      "scale": 2,
+                      "placeHolder": ""
+                    },
+                    "optional": false,
+                    "label": "金额",
+                    "defaultValue": {
+                      "type": "predefine",
+                      "name": "0.00"
+                    },
+                    "editable": true,
+                    "visible": true
+                  },
+                  {
+                    "name": "feeTypeId",
+                    "dataType": {
+                      "type": "ref",
+                      "name": "feeType",
+                      "format": "list"
+                    },
+                    "optional": false,
+                    "label": "费用类型",
+                    "defaultValue": {
+                      "type": "none"
+                    },
+                    "editable": true,
+                    "visible": true
+                  },
+                  {
+                    "name": "feeTypeForm",
+                    "dataType": {
+                      "type": "dynamic"
+                    },
+                    "optional": false,
+                    "label": "费用类型表单",
+                    "defaultValue": {
+                      "type": "none"
+                    },
+                    "editable": false,
+                    "visible": false
+                  },
+                  {
+                    "name": "invoice",
+                    "dataType": {
+                      "type": "number",
+                      "max": "99",
+                      "min": "0",
+                      "scale": 0,
+                      "placeHolder": ""
+                    },
+                    "optional": false,
+                    "label": "发票",
+                    "defaultValue": {
+                      "type": "predefine",
+                      "name": "1"
+                    },
+                    "editable": true,
+                    "visible": true
+                  },
+                  {
+                    "name": "reason",
+                    "dataType": {
+                      "type": "text",
+                      "maxLength": 140,
+                      "placeHolder": "添加描述"
+                    },
+                    "optional": true,
+                    "label": "描述",
+                    "defaultValue": {
+                      "type": "none"
+                    },
+                    "editable": true,
+                    "visible": true
+                  },
+                  {
+                    "name": "attachments",
+                    "dataType": {
+                      "type": "list",
+                      "elemType": {
+                        "type": "attachment"
+                      }
+                    },
+                    "optional": true,
+                    "label": "附件",
+                    "defaultValue": {
+                      "type": "none"
+                    },
+                    "editable": true,
+                    "visible": true
+                  },
+                  {
+                    "name": "orders",
+                    "dataType": {
+                      "type": "list",
+                      "elemType": {
+                        "type": "ref",
+                        "name": "order",
+                        "format": "list"
+                      }
+                    },
+                    "optional": true,
+                    "label": "第三方订单",
+                    "defaultValue": {
+                      "type": "none"
+                    },
+                    "editable": true,
+                    "visible": true
+                  }
+                ]
+              }
+            },
+            "optional": false,
+            "label": "消费明细",
+            "defaultValue": {
+              "type": "none"
+            },
+            "editable": true,
+            "visible": true
+          }
+        ]
+      ],
+      "originalId": "avQ5jvEkhI1E00",
+      "isActive": true,
+      "flowPlanConfigId": "TBw5jvEkhI0Y00",
+      "printTemplateId": "y1s5jvEkhI1s00",
+      "active": true
+    }
+  ]
+}
