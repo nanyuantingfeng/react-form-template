@@ -1,6 +1,6 @@
 {
   "name": "react-form-template",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "react-form-template",
   "author": "nanyuantingfeng",
   "license": "MIT",
@@ -29,12 +29,29 @@
     "message-center.js": "^2.0.2"
   },
   "main": "lib/index.js",
-  "module": "lib/index.esm.js",
   "scripts": {
     "test": "jest",
     "build": "rollup -c rollup.config.js",
     "publish2npm": "npm publish .",
     "clean": "rm -rf ./lib ./build",
     "dev": "hollow dev -p 9999"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanyuantingfeng/react-form-template.git"
+  },
+  "keywords": [
+    "form",
+    "template",
+    "react",
+    "dynamic"
+  ],
+  "bugs": {
+    "url": "https://github.com/nanyuantingfeng/react-form-template/issues"
+  },
+  "homepage": "https://github.com/nanyuantingfeng/react-form-template#readme"
 }
