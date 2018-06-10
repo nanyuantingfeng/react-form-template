@@ -67,4 +67,8 @@ node_modules
 index.hbs
 rollup.config.js
 webpack.config.js
+test
+.babelrc
+
+
 
