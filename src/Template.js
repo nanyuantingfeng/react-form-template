@@ -158,16 +158,18 @@ export default class Template extends PureComponent {
     }
 
     if (groupWrapper && multiFields) {
-      return multiFields.map((line, index) =>
-        groupWrapper(this.props,
-          this.renderSimpleFields(line, index), index));
+      return multiFields.map((line, index) => groupWrapper(
+        this.props,
+        this.renderSimpleFields(line, index),
+        index)
+      );
     }
 
     return this.renderFields(multiFields || fields);
   }
 
   render() {
-    let {className} = this.props;
-    return createElement('div', {className}, this.renderGroup());
+    let {className, rootWrapper = 'div'} = this.props;
+    return createElement(rootWrapper, {className}, this.renderGroup());
   }
 }
