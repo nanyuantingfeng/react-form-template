@@ -79,13 +79,18 @@ export const EnhanceField = (config) => (Component) => class extends PureCompone
       if (visible === false) {
         style.display = 'none';
       }
-      component = (
-        <Component {...others} field={field} bus={bus} style={style}/>);
+
+      component = (<Component {...others}
+                              field={field}
+                              bus={bus}
+                              style={style}/>);
     } else {
       let {getFieldDecorator} = form;
       let decorator = getFieldDecorator(name, cfg);
       // 调用 Form::getFieldDecorator API 使其支持校验等功能
-      component = decorator(<Component {...others} form={form} field={field}
+      component = decorator(<Component {...others}
+                                       form={form}
+                                       field={field}
                                        bus={bus}/>);
     }
 

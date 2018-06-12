@@ -66,6 +66,11 @@ export default class Dynamic extends PureComponent {
     if (!fnDeepCompare(this.props.template, nextProps.template)) {
       this.TEMPLATE = nextProps.create(Template);
     }
+
+    //editable <==> readonly 之间转换....
+    if (this.props.elements !== nextProps.elements) {
+      this.cellar = new Cellar(nextProps.elements);
+    }
   }
 
   eachInstances = (fn) => {
