@@ -6,7 +6,7 @@ import React, { Children, PureComponent } from 'react';
 import { Button, Form, Spin } from 'antd';
 import { elements } from './elements';
 
-import { EnhanceTemplate } from '../lib';
+import { EnhanceTemplate } from '../src';
 
 function Loading() {
   return <div style={{
@@ -98,7 +98,7 @@ export default class DEMO extends PureComponent {
   }
 
   handleGetValueWithValidate() {
-    this.bus.getValueWithValidate().then(d => {
+    this.bus.getValueWithValidate(['title', 'title2']).then(d => {
       console.log('getValueWithValidate', d);
     });
   }

@@ -103,17 +103,30 @@ export default class Template extends PureComponent {
     form.resetFields();
   };
 
-  validateFAS = (level) => {
+  validateFAS = (levelOrFields) => {
+
     return new Promise((resolve, reject) => {
       let {form, bus} = this.props;
       let {validateFields, validateFieldsAndScroll} = form;
       let fn = validateFieldsAndScroll || validateFields;
-      bus.setValidateLevel(level);
-      fn({force: true}, (e, values) => {
-        bus.setValidateLevel(); //设置默认值为0
-        e ? reject(e) : resolve(values);
-      });
+
+      if (typeof levelOrFields === 'number' || !levelOrFields) {
+        bus.setValidateLevel(levelOrFields);
+
+        fn({force: true}, (e, values) => {
+          bus.setValidateLevel(); //设置默认值为0
+          e ? reject(e) : resolve(values);
+        });
+
+      } else { //Array
+        fn(levelOrFields, {force: true}, (e, values) => {
+          bus.setValidateLevel(); //设置默认值为0
+          e ? reject(e) : resolve(values);
+        });
+      }
+
     });
+
   };
 
   renderSimpleFields(fields, prefixKey = '') {

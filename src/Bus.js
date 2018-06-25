@@ -23,8 +23,8 @@ export default function (bus = new MessageCenter()) {
     return this.invoke('@form:get:value');
   };
 
-  bus.getValueWithValidate = function (level) {
-    return this.invoke('@form:getValueWithValidate', level);
+  bus.getValueWithValidate = function (levelOrFields) {
+    return this.invoke('@form:getValueWithValidate', levelOrFields);
   };
 
   bus.setValue = function (values) {

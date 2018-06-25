@@ -73,7 +73,7 @@ export default class Dynamic extends PureComponent {
     }
   }
 
-  eachInstances = (fn) => {
+  eachInstances = (fn, fields) => {
     let {template} = this.refs;
 
     if (!template) {
@@ -83,7 +83,7 @@ export default class Dynamic extends PureComponent {
 
     let {instances} = template;
     let i = -1;
-    let keys = Object.keys(instances);
+    let keys = Array.isArray(fields) ? fields : Object.keys(instances);
 
     while (++i < keys.length) {
       let key = keys[i];
@@ -109,21 +109,22 @@ export default class Dynamic extends PureComponent {
     return this.bus.invoke('@form:set:value', oo);
   };
 
-  validateFields = (level) => {
-    return this.bus.invoke('@form:validate', level);
+  validateFields = (levelOrFields) => {
+    return this.bus.invoke('@form:validate', levelOrFields);
   };
 
-  getValue = () => {
+  getValue = (fields) => {
     let oo = {};
     this.eachInstances((one, key) => {
       let f = one.preGetValue || preGetValue;
       oo[key] = f.call(one);
-    });
+    }, fields);
+
     return PromiseMap(oo);
   };
 
-  getValueWithValidate = (level) => {
-    return this.validateFields(level).then(this.getValue);
+  getValueWithValidate = (levelOrFields) => {
+    return this.validateFields(levelOrFields).then(() => this.getValue(levelOrFields));
   };
 
   renderLoading() {

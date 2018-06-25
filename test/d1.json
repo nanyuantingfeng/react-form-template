@@ -40,6 +40,22 @@
           "editable": true,
           "visible": true
         },
+
+        {
+          "name": "title2",
+          "dataType": {
+            "type": "text",
+            "maxLength": 14,
+            "placeHolder": "14字以内"
+          },
+          "optional": false,
+          "label": "标题",
+          "defaultValue": {
+            "type": "none"
+          },
+          "editable": true,
+          "visible": true
+        },
         {
           "name": "isXXX",
           "type": "isX",

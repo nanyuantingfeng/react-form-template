@@ -5,7 +5,7 @@ import './template.less';
 import React, { Children, PureComponent } from 'react';
 import { Button, Form, Spin } from 'antd';
 import { elements } from './elements';
-import { Dynamic } from '../lib';
+import { Dynamic } from '../src';
 
 function Loading() {
   return <div style={{
